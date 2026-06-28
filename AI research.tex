@@ -1,0 +1,171 @@
+%-------------------------
+% One Page Resume - Mehar Ali (SASH Fellowship)
+%-------------------------
+
+\documentclass[letterpaper,9pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage[scale=0.90]{FiraMono}
+\usepackage{helvet}
+\usepackage{xcolor}
+
+\renewcommand*\familydefault{\sfdefault}
+\usepackage[T1]{fontenc}
+
+\definecolor{light-grey}{gray}{0.83}
+\definecolor{dark-grey}{gray}{0.3}
+\definecolor{text-grey}{gray}{0.08}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.65in}
+\addtolength{\evensidemargin}{-0.65in}
+\addtolength{\textwidth}{1.3in}
+\addtolength{\topmargin}{-.85in}
+\addtolength{\textheight}{1.85in}
+
+\urlstyle{same}
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\bfseries\small
+}{}{0em}{}[\color{light-grey}\titlerule \vspace{-4pt}]
+
+\setlist[itemize]{
+    leftmargin=12pt,
+    itemsep=0pt,
+    topsep=0pt,
+    parsep=0pt,
+    partopsep=0pt
+}
+
+\newcommand{\resumeItem}[1]{
+  \item \small{#1}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{0pt}
+  \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{\small #1} & {\color{dark-grey}\small #2} \\
+    \textit{\small #3} & {\color{dark-grey}\small #4} \\
+  \end{tabular*}
+  \vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[1]{
+  \vspace{1pt}
+  \textbf{\small #1}
+  \vspace{-1pt}
+}
+
+\color{text-grey}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\LARGE \textbf{Mehar Ali}} \\ \vspace{3pt}
+    \small
+    \faPhone* \ +92 321 8860329 \hspace{4pt}$|$\hspace{4pt}
+    \faEnvelope \ \href{mailto:92meharali@gmail.com}{92meharali@gmail.com} \hspace{4pt}$|$\hspace{4pt}
+    \faLinkedin \ \href{https://www.linkedin.com/in/mehar-ali-90b974210}{linkedin.com/in/mehar-ali-90b974210} \hspace{4pt}$|$\hspace{4pt}
+    \faGithub \ \href{https://github.com/92meharali}{github.com/92meharali}
+\end{center}
+
+\vspace{-8pt}
+\small{AI safety researcher with publications in Springer, IEEE, and CEUR-WS. Work spans LLM deception risk and anthropomorphism evaluation, alignment benchmarking, interpretability, and trust in autonomous systems. Experienced in cross-disciplinary international research with a track record of translating technical findings into policy-relevant frameworks.}
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+\resumeSubheading{Information Technology University (ITU)}{2023 -- Present}{BS Computer Science}{Lahore, Pakistan}
+
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+
+\resumeSubheading{CAAISC (ITU)}{Feb 2025 -- Present}{Research Lead}{Lahore, Pakistan}
+\begin{itemize}
+\resumeItem{Lead AI research teams designing safety evaluation frameworks: adversarial benchmarking, robustness testing, and statistical assessment of model behaviour under distribution shift \href{https://caaisc.itu.edu.pk/team}{[Team]}}
+\end{itemize}
+
+\resumeSubheading{ITU}{Feb 2026 -- Jun 2026}{Teaching Assistant, Algorithms}{Lahore, Pakistan}
+\begin{itemize}
+\resumeItem{Supported instruction and assessment for undergraduate Algorithms; assisted students with problem-solving and algorithmic reasoning}
+\end{itemize}
+
+\resumeSubheading{NUST}{Jun 2025 -- Dec 2025}{Undergraduate Research Assistant}{Islamabad, Pakistan}
+\begin{itemize}
+\resumeItem{Co-authored and first-authored papers on explainable AI and inclusive design accepted at XAI-Ed 2026 and ICSLE 2025 (Springer) \href{https://www.xai-ed.net/papers/XAI-Ed_2026_paper_1.pdf}{[XAI-Ed]} \href{https://www.researchgate.net/publication/395837132_Barrier-Based_Inclusive_Design_in_VR_Addressing_DEI_Challenges_through_the_UDL_30_Framework}{[ICSLE]}}
+\end{itemize}
+
+\resumeSubheading{Turing}{Jul 2024 -- Feb 2025}{AI Alignment Evaluator}{Remote}
+\begin{itemize}
+\resumeItem{Evaluated alignment and safety properties of frontier LLMs (GPT-4, Gemini 2.5); assessed behavioural consistency, reasoning quality, and failure modes through RLHF and SFT frameworks}
+\end{itemize}
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+
+\resumeProjectHeading{DecentraOrbit — Decentralised Autonomous Coordination (FYP)}
+\begin{itemize}
+\resumeItem{Designed Hyperledger Fabric framework for privacy-preserving orbital coordination using ZK-SNARKs (circom/snarkjs); addresses trust verification and coordination safety in multi-agent autonomous systems}
+\end{itemize}
+
+\resumeProjectHeading{Stroke Detection with Interpretability (Grad-CAM) \& Safe Compression}
+\begin{itemize}
+\resumeItem{Built CNN-based stroke detection (93\% accuracy); applied Grad-CAM for visual interpretability and post-training quantization achieving $\sim$4$\times$ compression with negligible accuracy loss (\href{https://github.com/92meharali}{GitHub})}
+\end{itemize}
+
+\resumeProjectHeading{Network Intrusion Detection — Adversarial Robustness Evaluation}
+\begin{itemize}
+\resumeItem{Built ML pipelines on NSL-KDD and CIC-IDS2017 (98.6\% F1); evaluated model robustness under adversarial and out-of-distribution network conditions (\href{https://github.com/92meharali}{GitHub})}
+\end{itemize}
+
+%-----------RESEARCH-----------
+\section{RESEARCH \& PUBLICATIONS}
+\begin{itemize}
+\resumeItem{\textbf{PERSONA: Context-Aware LLM Anthropomorphism Evaluation} — 1st author; under review; multidimensional framework evaluating deception risk, overtrust, and alignment failures in frontier LLMs across mental health, religious, and factual domains; engages EU AI Act and Weidinger et al. risk taxonomy \href{https://github.com/92meharali/LLM_Benchmarking_for_Anthromorphism_Computation_for_AIES_paper}{[GitHub]}}
+\resumeItem{\textbf{XAI-Ed 2026 (CEUR-WS)} — 1st author; explainable AI in educational systems \href{https://www.xai-ed.net/papers/XAI-Ed_2026_paper_1.pdf}{[Paper]}}
+\resumeItem{\textbf{ICSLE 2025 (Springer LNCS)} — Co-author; inclusive design and human-centred AI in VR \href{https://www.researchgate.net/profile/Awais-Baig-3/publication/395837132_Barrier-Based_Inclusive_Design_in_VR_Addressing_DEI_Challenges_through_the_UDL_30_Framework/links/68d55eee220a341aa14f3264/Barrier-Based-Inclusive-Design-in-VR-Addressing-DEI-Challenges-through-the-UDL_30-Framework.pdf}{[Paper]}}
+\resumeItem{\textbf{Digital Twins Scoping Review, Qatar University} — Under review IEEE; monitoring and verification of complex autonomous systems}
+\resumeItem{\textbf{Neuro \& Mental Health Research Initiative (QRDI)} — Contributor, \$300,000 interdisciplinary AI research project \href{https://www.linkedin.com/feed/update/urn:li:activity:7424050684309917696/}{[Post]}}
+\end{itemize}
+
+%-----------ACHIEVEMENTS-----------
+\section{ACHIEVEMENTS}
+\begin{itemize}
+\resumeItem{\textbf{AIC by CNES \& ESA 2026} — National winner; selected for international finals in France \href{https://www.linkedin.com/posts/information-technology-university_\%F0\%9D\%97\%9C\%F0\%9D\%97\%A7\%F0\%9D\%97\%A8-\%F0\%9D\%97\%A7\%F0\%9D\%97\%B2\%F0\%9D\%97\%AE\%F0\%9D\%97\%BA-\%F0\%9D\%98\%81\%F0\%9D\%97\%BC-\%F0\%9D\%97\%A5\%F0\%9D\%97\%B2\%F0\%9D\%97\%BD\%F0\%9D\%97\%BF\%F0\%9D\%97\%B2\%F0\%9D\%98\%80\%F0\%9D\%97\%B2\%F0\%9D\%97\%BB\%F0\%9D\%98\%81-\%F0\%9D\%97\%A3\%F0\%9D\%97\%AE\%F0\%9D\%97\%B8\%F0\%9D\%97\%B6\%F0\%9D\%98\%80\%F0\%9D\%97\%B4\%F0\%9D\%97\%AE\%F0\%9D\%97\%BB-activity-7440108338027065344-qhc0}{[Link]}}
+\resumeItem{\textbf{NASA Space Apps Challenge 2024} — National Winner \& Global Nominee \href{https://www.spaceappschallenge.org/nasa-space-apps-2024/find-a-team/nebula-galaxar/?tab=details}{[Link]}}
+\resumeItem{\textbf{Innovative Pakistan 2026} — Runner-up, 1,000+ projects, 8,000+ participants \href{https://www.linkedin.com/feed/update/urn:li:activity:7470778147882569728/}{[Link]}}
+\resumeItem{\textbf{g.tec BCI \& Neurotechnology Spring School} — 130 hours of advanced BCI and neurotechnology training}
+\end{itemize}
+
+%-----------LEADERSHIP-----------
+\section{LEADERSHIP}
+\begin{itemize}
+\resumeItem{\textbf{Founder \& President, NEBULA} — Built interdisciplinary scientific community connecting 1,000+ students; platform for responsible AI discourse and cross-university collaboration \href{https://www.instagram.com/nebula_headquarters?igsh=Ymc5ZXB4ZDAwa3Bx&utm_source=qr}{[Instagram]}}
+\resumeItem{\textbf{Local Co-Lead, NASA Space Apps Lahore 2025} — Coordinated national hackathon engaging 2,000+ participants \href{https://www.spaceappschallenge.org/2025/local-events/lahore/}{[Event]}}
+\end{itemize}
+
+%-----------SKILLS-----------
+\section{SKILLS}
+\small{
+\textbf{Programming:} Python, SQL, Git, GitHub, Linux, Docker, Jupyter, Google Colab \\
+\textbf{AI Safety \& Evaluation:} LLM Alignment Evaluation, Red-Teaming, Behavioural Benchmarking, RLHF/SFT, Robustness Testing \\
+\textbf{Interpretability \& Trustworthy AI:} Grad-CAM, Explainable AI (XAI), Feature Attribution, Model Compression, Uncertainty Estimation \\
+\textbf{Research:} Technical Writing, Scientific Publishing, Experimental Design, Statistical Analysis, Cross-functional Collaboration
+}
+
+\end{document}

@@ -1,0 +1,187 @@
+%-------------------------
+% One Page Resume - Mehar Ali (Tether ML Intern)
+%-------------------------
+
+\documentclass[letterpaper,8.5pt]{article}
+
+\usepackage{latexsym}
+\usepackage[empty]{fullpage}
+\usepackage{titlesec}
+\usepackage{enumitem}
+\usepackage[hidelinks]{hyperref}
+\usepackage{fancyhdr}
+\usepackage[english]{babel}
+\usepackage{tabularx}
+\usepackage{fontawesome5}
+\usepackage[scale=0.90]{FiraMono}
+\usepackage{tgheros}
+\usepackage{xcolor}
+
+\renewcommand*\familydefault{\sfdefault}
+\usepackage[T1]{fontenc}
+
+\definecolor{light-grey}{gray}{0.83}
+\definecolor{dark-grey}{gray}{0.3}
+\definecolor{text-grey}{gray}{0.08}
+
+\pagestyle{fancy}
+\fancyhf{}
+\fancyfoot{}
+\renewcommand{\headrulewidth}{0pt}
+\renewcommand{\footrulewidth}{0pt}
+
+\addtolength{\oddsidemargin}{-0.65in}
+\addtolength{\evensidemargin}{-0.65in}
+\addtolength{\textwidth}{1.3in}
+\addtolength{\topmargin}{-.80in}
+\addtolength{\textheight}{1.6in}
+
+\urlstyle{same}
+\raggedright
+\setlength{\tabcolsep}{0in}
+
+\titleformat{\section}{
+  \vspace{-4pt}\bfseries\small
+}{}{0em}{}[\color{light-grey}\titlerule \vspace{-4pt}]
+
+\setlist[itemize]{
+    leftmargin=12pt,
+    itemsep=0pt,
+    topsep=0pt,
+    parsep=0pt,
+    partopsep=0pt
+}
+
+\newcommand{\resumeItem}[1]{
+  \item \small{#1}
+}
+
+\newcommand{\resumeSubheading}[4]{
+  \vspace{1pt}
+  \begin{tabular*}{\textwidth}{l@{\extracolsep{\fill}}r}
+    \textbf{\small #1} {\color{dark-grey}\small $\cdot$} \textit{\small #3} & {\color{dark-grey}\small #4 $\cdot$ #2} \\
+  \end{tabular*}
+  \vspace{-5pt}
+}
+
+\newcommand{\resumeProjectHeading}[1]{
+  \vspace{1pt}
+  \textbf{\small #1}
+  \vspace{-3pt}
+}
+
+\color{text-grey}
+
+\begin{document}
+
+%----------HEADING----------
+\begin{center}
+    {\LARGE \textbf{Mehar Ali}} \\ \vspace{3pt}
+    \small
+    \faPhone* \ +92 321 8860329 \hspace{4pt}$|$\hspace{4pt}
+    \faEnvelope \ \href{mailto:92meharali@gmail.com}{92meharali@gmail.com} \hspace{4pt}$|$\hspace{4pt}
+    \faLinkedin \ \href{https://www.linkedin.com/in/mehar-ali-90b974210}{linkedin.com/in/mehar-ali-90b974210} \hspace{4pt}$|$\hspace{4pt}
+    \faGithub \ \href{https://github.com/92meharali}{github.com/92meharali}
+\end{center}
+
+\vspace{-8pt}
+\small{Computer Science undergraduate specialising in machine learning, deep learning, and AI research, with publications in Springer, IEEE, and CEUR-WS. Experienced in scalable ML systems, experimental research, data analytics, and international multidisciplinary collaborations. Available from January 2027.}
+
+%-----------EDUCATION-----------
+\section{EDUCATION}
+\resumeSubheading{Information Technology University (ITU)}{2023 -- Present}{BS Computer Science}{Lahore, Pakistan}
+
+%-----------EXPERIENCE-----------
+\section{EXPERIENCE}
+
+\resumeSubheading{CAAISC (ITU)}{2025 -- Present}{Lab Lead (prev. Research Lead)}{Lahore, Pakistan}
+\begin{itemize}
+\resumeItem{Lead interdisciplinary AI and VR research teams building ML pipelines involving preprocessing, neural network experimentation, benchmarking, and statistical evaluation}
+\resumeItem{Coordinate technical research workflows, documentation, and concurrent collaborative AI projects across computational systems \href{https://caaisc.itu.edu.pk/team}{[Team]}}
+\end{itemize}
+
+\resumeSubheading{Information Technology University (ITU)}{2026 -- Present}{Teaching Assistant, Algorithms}{Lahore, Pakistan}
+\begin{itemize}
+\resumeItem{Support instruction and assessment for undergraduate Algorithms course; assist students with problem-solving and algorithmic reasoning}
+\end{itemize}
+
+\resumeSubheading{NUST}{2025}{Undergraduate Research Assistant}{Islamabad, Pakistan}
+\begin{itemize}
+\resumeItem{Co-authored and first-authored papers accepted at ICSLE 2025 and XAI-Ed 2026; conducted experiments, model validation, statistical analysis, and scientific writing within cross-institutional research teams \href{https://www.xai-ed.net/papers/XAI-Ed_2026_paper_1.pdf}{[XAI-Ed Paper]} \href{https://www.researchgate.net/publication/395837132_Barrier-Based_Inclusive_Design_in_VR_Addressing_DEI_Challenges_through_the_UDL_30_Framework}{[ICSLE Paper]}}
+\end{itemize}
+
+\resumeSubheading{Turing}{2023}{AI Model Evaluator}{Remote}
+\begin{itemize}
+\resumeItem{Evaluated large language models including GPT-4 and Gemini 2.5, benchmarking reasoning quality, reliability, comparative performance, and response consistency, RHLF and SFT}
+\end{itemize}
+
+%-----------PROJECTS-----------
+\section{PROJECTS}
+
+\resumeProjectHeading{Stroke Detection with Quantization \& Grad-CAM}
+\begin{itemize}
+\resumeItem{Built CNN-based brain stroke detection models achieving 93\% test accuracy; applied Grad-CAM for interpretability and post-training quantization achieving $\sim$4$\times$ model compression with negligible accuracy loss (\href{https://github.com/92meharali}{GitHub})}
+\end{itemize}
+
+\resumeProjectHeading{Quantum Neural Networks for Wind Energy Forecasting \textnormal{— IEEE under review}}
+\begin{itemize}
+\resumeItem{Developed hybrid quantum-classical neural network architectures for wind energy time-series forecasting; achieved R$^2$ of 0.91, outperforming classical LSTM baseline; led modelling, experimentation, evaluation, and manuscript preparation}
+\end{itemize}
+
+\resumeProjectHeading{Network Intrusion Detection using Machine Learning}
+\begin{itemize}
+\resumeItem{Built end-to-end ML pipelines on NSL-KDD and CIC-IDS2017 datasets achieving 98.6\% F1-score; covered feature engineering, classification modelling, optimization, and large-scale evaluation (\href{https://github.com/92meharali}{GitHub})}
+\end{itemize}
+
+\resumeProjectHeading{Leukemia Detection using Graph Machine Learning}
+\begin{itemize}
+\resumeItem{Designed graph-based deep learning workflow modelling biological feature relationships for AML vs.\ ALL classification; achieved 97\% train and 94\% test accuracy using representation learning (\href{https://github.com/92meharali}{GitHub})}
+\end{itemize}
+
+\resumeProjectHeading{Farnsworth Fusor Reactor \textnormal{— NEBULA}}
+\begin{itemize}
+\resumeItem{Attempted construction of one of the world's lowest-cost Farnsworth fusor reactors; explored vacuum systems, high-voltage engineering, and plasma physics; documented build process and experimental outcomes}
+\end{itemize}
+
+%-----------RESEARCH-----------
+\section{RESEARCH \& PUBLICATIONS}
+\begin{itemize}
+\resumeItem{\textbf{XAI-Ed 2026 (CEUR-WS)} — 1st author; accepted explainable AI publication \href{https://www.xai-ed.net/papers/XAI-Ed_2026_paper_1.pdf}{[Paper]}}
+\resumeItem{\textbf{ICSLE 2025 (Springer LNCS)} — Co-author; accepted peer-reviewed publication \href{https://www.researchgate.net/profile/Awais-Baig-3/publication/395837132_Barrier-Based_Inclusive_Design_in_VR_Addressing_DEI_Challenges_through_the_UDL_30_Framework/links/68d55eee220a341aa14f3264/Barrier-Based-Inclusive-Design-in-VR-Addressing-DEI-Challenges-through-the-UDL-30-Framework.pdf}{[Paper]}}
+\resumeItem{\textbf{Digital Twins Scoping Review, Qatar University} — Under review in IEEE}
+\resumeItem{\textbf{Neuro \& Mental Health Research Initiative, Qatar} — Contributor in interdisciplinary AI research project \href{https://www.linkedin.com/feed/update/urn:li:activity:7424050684309917696/}{[Link]}}
+\resumeItem{\textbf{Quantum Neural Networks for Wind Energy Forecasting, Yildiz Technical University} — Under review in IEEE}
+\end{itemize}
+
+%-----------ACHIEVEMENTS-----------
+\section{ACHIEVEMENTS}
+\begin{itemize}
+\resumeItem{\textbf{Media Appearances} — Featured on Express News \href{https://www.instagram.com/reel/DDPYqbKqwj1/}{[Reel]}, 24 News \href{https://www.instagram.com/reel/DDM2wrHKapq/}{[Reel]}, PTV \href{https://www.instagram.com/reel/DIgQsOLKF_b/}{[Reel]}, and ITU Podcast \href{https://www.instagram.com/reel/DHdmzG6KDvw/}{[Reel]}}
+\resumeItem{\textbf{NEBULA Magazine} — Published author; available on Amazon Kindle \href{https://www.amazon.com/Archives-2-NEBULA-Mehar-Ali-ebook/dp/B0DVLS5161}{[Link]}}
+\resumeItem{\textbf{g.tec BCI \& Neurotechnology Spring School} — Completed 130 hours of advanced BCI and neurotechnology training}
+\resumeItem{\textbf{AIC Pakistan 2026} — National winner; selected for international finals in France \href{https://www.linkedin.com/posts/information-technology-university_\%F0\%9D\%97\%9C\%F0\%9D\%97\%A7\%F0\%9D\%97\%A8-\%F0\%9D\%97\%A7\%F0\%9D\%97\%B2\%F0\%9D\%97\%AE\%F0\%9D\%97\%BA-\%F0\%9D\%98\%81\%F0\%9D\%97\%BC-\%F0\%9D\%97\%A5\%F0\%9D\%97\%B2\%F0\%9D\%97\%BD\%F0\%9D\%97\%BF\%F0\%9D\%97\%B2\%F0\%9D\%98\%80\%F0\%9D\%97\%B2\%F0\%9D\%97\%BB\%F0\%9D\%98\%81-\%F0\%9D\%97\%A3\%F0\%9D\%97\%AE\%F0\%9D\%97\%B8\%F0\%9D\%97\%B6\%F0\%9D\%98\%80\%F0\%9D\%98\%81\%F0\%9D\%97\%AE\%F0\%9D\%97\%BB-activity-7440108338027065344-qhc0}{[Link]}}
+\resumeItem{\textbf{NASA Space Apps Challenge 2024} — National Winner \& Global Nominee \href{https://www.spaceappschallenge.org/nasa-space-apps-2024/find-a-team/nebula-galaxar/?tab=details}{[Link]}}
+\resumeItem{\textbf{QRDI Council, Qatar} — Contributor to \$300,000 funded neuroscience and AI research initiative \href{https://www.linkedin.com/feed/update/urn:li:activity:7424050684309917696/}{[Link]}}
+%\resumeItem{\textbf{Simon Harrison Scholar (75\%)} — University of Oxford advanced computational scholarship}
+\resumeItem{\textbf{Innovative Pakistan 2026} — Runner-up among 1,000+ projects and 8,000+ participants \href{https://www.linkedin.com/feed/update/urn:li:activity:7470778147882569728/}{[Link]}}
+\end{itemize}
+
+%-----------LEADERSHIP-----------
+\section{LEADERSHIP}
+\begin{itemize}
+\resumeItem{\textbf{Founder \& President, NEBULA Scientific Society} — Built interdisciplinary scientific community connecting 1,000+ students across universities \href{https://www.instagram.com/nebula_headquarters?igsh=Ymc5ZXB4ZDAwa3Bx&utm_source=qr}{[Instagram]}}
+\resumeItem{\textbf{Lead Organiser, IBM Qiskit Fall Fest Pakistan} — Delivered technical workshops for 250+ students \href{https://www.credly.com/badges/14eefc17-88e5-4e48-b0e8-ecb932ab0d6b/public_url}{[Badge]} \href{https://www.instagram.com/ibm_qiskit_itu/}{[Instagram]} \href{https://ibm-qiskit-fall-fest2025.vercel.app/}{[Website]} \href{https://quantum2025.org/iyq-event/ibm-qiskit-fall-fest-at-itu-pakistan/}{[IYQ]}}
+\resumeItem{\textbf{Local Co-Lead, NASA Space Apps Lahore 2025} — Coordinated national hackathon engaging 2,000+ participants \href{https://www.linkedin.com/feed/update/urn:li:activity:7381065596311879680/}{[LinkedIn]} \href{https://www.spaceappschallenge.org/2025/local-events/lahore/}{[Event]}}
+\end{itemize}
+
+%-----------SKILLS-----------
+\section{SKILLS}
+\small{
+\textbf{Programming:} Python, SQL, Git, GitHub, Linux, Docker, Jupyter, Google Colab \\
+\textbf{Machine Learning:} PyTorch, Scikit-learn, Pandas, NumPy, HuggingFace Transformers, Neural Networks, LLM Evaluation, Feature Engineering \\
+\textbf{Deep Learning:} Representation Learning, Generative AI, Graph ML, Supervised Learning, Self-Supervised Learning, GPU Training Pipelines \\
+\textbf{Infrastructure:} AWS S3, GCP, Docker, Automation Pipelines, Distributed Computing Workflows \\
+\textbf{Research:} Technical Writing, Scientific Publishing, Experimental Design, Statistical Analysis, Cross-functional Collaboration
+}
+
+\end{document}
