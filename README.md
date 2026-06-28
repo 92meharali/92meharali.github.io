@@ -26,7 +26,23 @@ npm run preview
 
 ## Deploy (GitHub Pages — free)
 
-Live URL: **https://92meharali.github.io**
+Live URL: **https://meharal.me** (also [92meharali.github.io](https://92meharali.github.io))
+
+### Custom domain (meharal.me)
+
+DNS is managed in Namecheap (via [nc.me](https://nc.me) / GitHub Student Pack). Set these **Host Records**:
+
+| Type  | Host | Value |
+|-------|------|-------|
+| A     | `@`  | `185.199.108.153` |
+| A     | `@`  | `185.199.109.153` |
+| A     | `@`  | `185.199.110.153` |
+| A     | `@`  | `185.199.111.153` |
+| CNAME | `www` | `92meharali.github.io.` |
+
+Remove any conflicting parking page or URL redirect records. DNS can take up to 24 hours; usually under 1 hour.
+
+In the repo: **Settings → Pages → Custom domain** should show `meharal.me`. GitHub will issue HTTPS automatically once DNS verifies.
 
 ### One-time setup
 
